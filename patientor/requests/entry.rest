@@ -1,0 +1,59 @@
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "date": "2023-05-31",
+  "specialist": "Dr Doolittle",
+  "description": "Injured leg from fighting another dog",
+  "type": "HealthCheck",
+  "healthCheckRating": 0
+}
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "date": "2023-05-31",
+  "specialist": "Dr Doolittle",
+  "description": "Injured leg from fighting another dog",
+  "type": "OccupationalHealthcare",
+  "employerName": "NYPD",
+  "sickLeave": {
+    "startDate": "2023-05-31",
+    "endDate": "2023-06-02"
+  }
+}
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "date": "2023-05-31",
+  "specialist": "Dr Doolittle",
+  "description": "Injured leg from fighting another dog",
+  "type": "Hospital",
+  "employerName": "NYPD",
+  "discharge": {
+    "date": "2023-05-31",
+    "criteria": "Fully healed."
+  }
+}
+
+###
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+Content-Type: application/json
+
+{
+  "date": "2023-05-31",
+  "specialist": "Dr Doolittle",
+  "description": "Injured leg from fighting another dog",
+  "type": "Hospital",
+  "employerName": "NYPD",
+  "diagnosisCodes": ["S62.5"],
+  "discharge": {
+    "date": "2023-05-31",
+    "criteria": "Fully healed."
+  }
+}
